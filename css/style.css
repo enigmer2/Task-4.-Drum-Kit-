@@ -17,6 +17,7 @@ h1 {
   height: 60px;
 }
 footer {
+  
   width: 100%;
   position: fixed;
   bottom: 0px;
@@ -75,6 +76,7 @@ footer > p {
 
 .white-key-button {
   opacity: 0.5;
+  transition: all 1s;
   background: white;
   background: linear-gradient(rgb(255, 255, 255), white);
   box-shadow: inset 1px 1px 6px 0px rgb(100, 100, 100),
@@ -113,7 +115,7 @@ footer > p {
   padding: 0px;
   border: none;
   border-radius: 0px 0px 4px 4px;
-  cursor: pointer;
+  
   transform: none;
 }
 #d3 {
@@ -126,7 +128,7 @@ footer > p {
   padding: 0px;
   border: none;
   border-radius: 0px 0px 4px 4px;
-  cursor: pointer;
+  
   transform: none;
 }
 #e3 {
@@ -139,7 +141,7 @@ footer > p {
   padding: 0px;
   border: none;
   border-radius: 0px 0px 4px 4px;
-  cursor: pointer;
+  
   transform: none;
 }
 #c3m {
@@ -150,7 +152,7 @@ footer > p {
   margin: 0px;
   padding: 0px;
   border: none;
-  cursor: pointer;
+  
   position: absolute;
   top: 0px;
   border-radius: 0px 0px 3px 3px;
@@ -165,7 +167,7 @@ footer > p {
   margin: 0px;
   padding: 0px;
   border: none;
-  cursor: pointer;
+  
   position: absolute;
   top: 0px;
   border-radius: 0px 0px 3px 3px;
@@ -183,7 +185,7 @@ footer > p {
   padding: 0px;
   border: none;
   border-radius: 0px 0px 4px 4px;
-  cursor: pointer;
+  
   transform: none;
 }
 #g3 {
@@ -196,7 +198,7 @@ footer > p {
   padding: 0px;
   border: none;
   border-radius: 0px 0px 4px 4px;
-  cursor: pointer;
+  
   transform: none;
 }
 #a3 {
@@ -209,7 +211,7 @@ footer > p {
   padding: 0px;
   border: none;
   border-radius: 0px 0px 4px 4px;
-  cursor: pointer;
+  
   transform: none;
 }
 #b3 {
@@ -222,7 +224,7 @@ footer > p {
   padding: 0px;
   border: none;
   border-radius: 0px 0px 4px 4px;
-  cursor: pointer;
+  
   transform: none;
 }
 #f3m {
@@ -233,7 +235,7 @@ footer > p {
   margin: 0px;
   padding: 0px;
   border: none;
-  cursor: pointer;
+  
   position: absolute;
   top: 0px;
   border-radius: 0px 0px 3px 3px;
@@ -248,7 +250,7 @@ footer > p {
   margin: 0px;
   padding: 0px;
   border: none;
-  cursor: pointer;
+  
   position: absolute;
   top: 0px;
   border-radius: 0px 0px 3px 3px;
@@ -263,7 +265,7 @@ footer > p {
   margin: 0px;
   padding: 0px;
   border: none;
-  cursor: pointer;
+  
   position: absolute;
   top: 0px;
   border-radius: 0px 0px 3px 3px;
@@ -281,6 +283,15 @@ footer > p {
   padding: 0px;
   border: none;
   border-radius: 0px 0px 4px 4px;
-  cursor: pointer;
+  
   transform: none;
+}
+
+.playing{
+  transform: scale(2);
+  background: rgba(255, 255, 255, 0.616);
+  background: linear-gradient(rgb(170, 170, 170), rgb(141, 141, 141));
+  box-shadow: inset 1px 1px 6px 0px rgb(80, 80, 80),
+    inset -1px -1px 6px 0px black, 1px 0px rgb(126, 126, 126),
+    -1px 0px rgb(141, 141, 141);
 }
