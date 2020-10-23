@@ -1,0 +1,286 @@
+body {
+  background-color: rgb(231, 231, 231);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+header {
+  width: 100%;
+  display: flex;
+}
+h1 {
+  margin: 0 auto;
+  height: 60px;
+}
+footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+  display: flex;
+}
+footer > p {
+  margin: 0 auto;
+}
+
+.piano {
+  padding-top: 80.2139%;
+  position: relative;
+}
+.piano-keys {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border: none;
+  outline: none;
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  width: 100%;
+  max-height: 58%;
+}
+
+.piano-keys-group1 {
+  position: relative;
+  display: inline-block;
+  padding: 0px;
+  margin: 0px;
+  border: none;
+  outline: none;
+  width: 37.5%;
+  height: 100%;
+}
+.piano-keys-group2 {
+  position: relative;
+  display: inline-block;
+  padding: 0px;
+  margin: 0px -5px;
+  border: none;
+  outline: none;
+  width: 50%;
+  height: 100%;
+}
+.piano-keys-group3 {
+  display: inline-block;
+  padding: 0px;
+  margin: 0px;
+  border: none;
+  outline: none;
+  width: 12%;
+  height: 100%;
+}
+
+.white-key-button {
+  opacity: 0.5;
+  background: white;
+  background: linear-gradient(rgb(255, 255, 255), white);
+  box-shadow: inset 1px 1px 6px 0px rgb(100, 100, 100),
+    inset -1px -1px 6px 0px black, 1px 0px rgb(182, 182, 182),
+    -1px 0px rgb(172, 172, 172);
+}
+.white-key-button-brige {
+  font-family: Arial;
+  position: absolute;
+  bottom: 0px;
+  left: 25%;
+  width: 50%;
+}
+.black-key-button {
+  background: #111;
+  background: linear-gradient(#111, #444);
+}
+
+.black-in-key {
+  height: 88%;
+  margin: 0px 8%;
+  padding: 0px;
+  border: none;
+  outline: none;
+  background: inherit;
+  box-shadow: rgb(119, 119, 119) 0px 2px 1px 0px;
+}
+
+#c3 {
+  width: 32.8571%;
+  user-select: none;
+  outline: none;
+  height: 100%;
+  position: relative;
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  border-radius: 0px 0px 4px 4px;
+  cursor: pointer;
+  transform: none;
+}
+#d3 {
+  width: 34.2857%;
+  user-select: none;
+  outline: none;
+  height: 100%;
+  position: relative;
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  border-radius: 0px 0px 4px 4px;
+  cursor: pointer;
+  transform: none;
+}
+#e3 {
+  width: 32.8571%;
+  user-select: none;
+  outline: none;
+  height: 100%;
+  position: relative;
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  border-radius: 0px 0px 4px 4px;
+  cursor: pointer;
+  transform: none;
+}
+#c3m {
+  width: 20%;
+  user-select: none;
+  outline: none;
+  height: 66.6667%;
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 0px;
+  border-radius: 0px 0px 3px 3px;
+  left: 20%;
+  transform: none;
+}
+#d3m {
+  width: 20%;
+  user-select: none;
+  outline: none;
+  height: 66.6667%;
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 0px;
+  border-radius: 0px 0px 3px 3px;
+  right: 20%;
+  transform: none;
+}
+
+#f3 {
+  width: 25.5319%;
+  user-select: none;
+  outline: none;
+  height: 100%;
+  position: relative;
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  border-radius: 0px 0px 4px 4px;
+  cursor: pointer;
+  transform: none;
+}
+#g3 {
+  width: 24.4681%;
+  user-select: none;
+  outline: none;
+  height: 100%;
+  position: relative;
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  border-radius: 0px 0px 4px 4px;
+  cursor: pointer;
+  transform: none;
+}
+#a3 {
+  width: 24.4681%;
+  user-select: none;
+  outline: none;
+  height: 100%;
+  position: relative;
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  border-radius: 0px 0px 4px 4px;
+  cursor: pointer;
+  transform: none;
+}
+#b3 {
+  width: 25.5319%;
+  user-select: none;
+  outline: none;
+  height: 100%;
+  position: relative;
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  border-radius: 0px 0px 4px 4px;
+  cursor: pointer;
+  transform: none;
+}
+#f3m {
+  width: 14.8936%;
+  user-select: none;
+  outline: none;
+  height: 66.6667%;
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 0px;
+  border-radius: 0px 0px 3px 3px;
+  left: 13.8298%;
+  transform: none;
+}
+#g3m {
+  width: 14.8936%;
+  user-select: none;
+  outline: none;
+  height: 66.6667%;
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 0px;
+  border-radius: 0px 0px 3px 3px;
+  left: 42.5532%;
+  transform: none;
+}
+#a3m {
+  width: 14.8936%;
+  user-select: none;
+  outline: none;
+  height: 66.6667%;
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 0px;
+  border-radius: 0px 0px 3px 3px;
+  right: 13.8298%;
+  transform: none;
+}
+
+#c4 {
+  width: 100%;
+  user-select: none;
+  outline: none;
+  height: 100%;
+  position: relative;
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  border-radius: 0px 0px 4px 4px;
+  cursor: pointer;
+  transform: none;
+}
