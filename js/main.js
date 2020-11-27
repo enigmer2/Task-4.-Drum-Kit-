@@ -1,17 +1,22 @@
+const START_MUSIC_AT = 0.68;
+const MUSIC_VALUME = 1;
+const TIME_TO_REMOVE_STYLE = 500;
+
 function buttonPress(e) {
-  // обработчик листнера нажатия клавиш
+
   const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
   const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
-  if (!audio) return; // если нажата нетак клавиша
-  //audio.playbackRate = 3.0; // ускоряет музыку
-  audio.volume = 1;
-  const time = 500;
-  audio.currentTime = 0.68;
+
+  if (!audio) return; 
+
+  audio.volume = MUSIC_VALUME;
+  audio.currentTime = START_MUSIC_AT;
   audio.play();
   key.classList.add("playing");
+
   setTimeout(function () {
     key.classList.remove("playing");
-  }, time);
+  }, TIME_TO_REMOVE_STYLE);
 }
 
 addEventListener("keydown", buttonPress);

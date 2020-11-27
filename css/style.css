@@ -17,7 +17,6 @@ h1 {
   height: 60px;
 }
 footer {
-  
   width: 100%;
   position: fixed;
   bottom: 0px;
@@ -37,8 +36,7 @@ footer > p {
   left: 0px;
   border: none;
   outline: none;
-  margin: 0px;
-  padding: 0px;
+
   height: 100%;
   width: 100%;
   max-height: 58%;
@@ -47,8 +45,6 @@ footer > p {
 .piano-keys-group1 {
   position: relative;
   display: inline-block;
-  padding: 0px;
-  margin: 0px;
   border: none;
   outline: none;
   width: 37.5%;
@@ -66,15 +62,26 @@ footer > p {
 }
 .piano-keys-group3 {
   display: inline-block;
-  padding: 0px;
-  margin: 0px;
   border: none;
   outline: none;
   width: 12%;
   height: 100%;
+  transform: translateX(-10px);
+}
+
+.key {
+  font-size: 1vh;
+  width: 32.8571%;
+  user-select: none;
+  outline: none;
+  height: 100%;
+  position: relative;
+  border: none;
+  transform: none;
 }
 
 .white-key-button {
+  border-radius: 0px 0px 4px 4px;
   opacity: 0.5;
   transition: all 1s;
   background: white;
@@ -83,215 +90,144 @@ footer > p {
     inset -1px -1px 6px 0px black, 1px 0px rgb(182, 182, 182),
     -1px 0px rgb(172, 172, 172);
 }
-.white-key-button-brige {
-  font-family: Arial;
-  position: absolute;
-  bottom: 0px;
-  left: 25%;
-  width: 50%;
-}
+
 .black-key-button {
+  height: 66.6667%;
+  position: absolute;
+  border-radius: 0px 0px 3px 3px;
   background: #111;
   background: linear-gradient(#111, #444);
 }
 
 .black-in-key {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   height: 88%;
   margin: 0px 8%;
   padding: 0px;
   border: none;
-  outline: none;
   background: inherit;
   box-shadow: rgb(119, 119, 119) 0px 2px 1px 0px;
 }
 
 #c3 {
   width: 32.8571%;
-  user-select: none;
-  outline: none;
-  height: 100%;
-  position: relative;
-  margin: 0px;
-  padding: 0px;
-  border: none;
-  border-radius: 0px 0px 4px 4px;
-  
   transform: none;
 }
 #d3 {
   width: 34.2857%;
-  user-select: none;
-  outline: none;
-  height: 100%;
-  position: relative;
-  margin: 0px;
-  padding: 0px;
-  border: none;
-  border-radius: 0px 0px 4px 4px;
-  
   transform: none;
 }
 #e3 {
-  width: 32.8571%;
-  user-select: none;
-  outline: none;
-  height: 100%;
-  position: relative;
-  margin: 0px;
-  padding: 0px;
-  border: none;
-  border-radius: 0px 0px 4px 4px;
-  
+  width: 29.8571%;
   transform: none;
 }
 #c3m {
   width: 20%;
-  user-select: none;
-  outline: none;
-  height: 66.6667%;
-  margin: 0px;
-  padding: 0px;
-  border: none;
-  
-  position: absolute;
-  top: 0px;
-  border-radius: 0px 0px 3px 3px;
   left: 20%;
   transform: none;
 }
 #d3m {
   width: 20%;
-  user-select: none;
-  outline: none;
-  height: 66.6667%;
-  margin: 0px;
-  padding: 0px;
-  border: none;
-  
-  position: absolute;
-  top: 0px;
-  border-radius: 0px 0px 3px 3px;
   right: 20%;
   transform: none;
 }
 
 #f3 {
   width: 25.5319%;
-  user-select: none;
-  outline: none;
-  height: 100%;
-  position: relative;
-  margin: 0px;
-  padding: 0px;
-  border: none;
-  border-radius: 0px 0px 4px 4px;
-  
   transform: none;
 }
 #g3 {
   width: 24.4681%;
-  user-select: none;
-  outline: none;
-  height: 100%;
-  position: relative;
-  margin: 0px;
-  padding: 0px;
-  border: none;
-  border-radius: 0px 0px 4px 4px;
-  
   transform: none;
 }
 #a3 {
   width: 24.4681%;
-  user-select: none;
-  outline: none;
-  height: 100%;
-  position: relative;
-  margin: 0px;
-  padding: 0px;
-  border: none;
-  border-radius: 0px 0px 4px 4px;
-  
   transform: none;
 }
 #b3 {
-  width: 25.5319%;
-  user-select: none;
-  outline: none;
-  height: 100%;
-  position: relative;
-  margin: 0px;
-  padding: 0px;
-  border: none;
-  border-radius: 0px 0px 4px 4px;
-  
+  width: 21.5319%;
+
   transform: none;
 }
 #f3m {
   width: 14.8936%;
-  user-select: none;
-  outline: none;
-  height: 66.6667%;
-  margin: 0px;
-  padding: 0px;
-  border: none;
-  
-  position: absolute;
-  top: 0px;
-  border-radius: 0px 0px 3px 3px;
   left: 13.8298%;
   transform: none;
 }
 #g3m {
   width: 14.8936%;
-  user-select: none;
-  outline: none;
-  height: 66.6667%;
-  margin: 0px;
-  padding: 0px;
-  border: none;
-  
-  position: absolute;
-  top: 0px;
-  border-radius: 0px 0px 3px 3px;
   left: 42.5532%;
   transform: none;
 }
 #a3m {
   width: 14.8936%;
-  user-select: none;
-  outline: none;
-  height: 66.6667%;
-  margin: 0px;
-  padding: 0px;
-  border: none;
-  
-  position: absolute;
-  top: 0px;
-  border-radius: 0px 0px 3px 3px;
   right: 13.8298%;
   transform: none;
 }
-
 #c4 {
   width: 100%;
-  user-select: none;
-  outline: none;
   height: 100%;
-  position: relative;
-  margin: 0px;
-  padding: 0px;
-  border: none;
-  border-radius: 0px 0px 4px 4px;
-  
   transform: none;
 }
 
-.playing{
+.playing {
   transform: scale(2);
   background: rgba(255, 255, 255, 0.616);
   background: linear-gradient(rgb(170, 170, 170), rgb(141, 141, 141));
   box-shadow: inset 1px 1px 6px 0px rgb(80, 80, 80),
     inset -1px -1px 6px 0px black, 1px 0px rgb(126, 126, 126),
     -1px 0px rgb(141, 141, 141);
+}
+
+.absolut {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-size: large;
+}
+
+.absolut_top2 {
+  top: 2%;
+}
+.absolut_top5 {
+  top: 5%;
+}
+.absolut_bottom5 {
+  bottom: 5%;
+}
+.absolut_bottom10 {
+  bottom: 10%;
+}
+.absolut_right10{
+  right: 10%;
+}
+.absolut_left10{
+  left: 10%;
+}
+
+@media (max-width: 900px) and (min-width: 0px) {
+  .piano-keys-group3 {
+    transform: translateX(0px);
+  }
+}
+@media (max-width: 710px) and (min-width: 400px) {
+  #e3 {
+    width: 26.8571%;
+  }
+  #b3 {
+    width: 19.5319%;
+  }
+}
+@media (max-width: 400px) and (min-width: 0px) {
+  #e3 {
+    width: 25.8571%;
+  }
+  #b3 {
+    width: 18%;
+  }
 }
